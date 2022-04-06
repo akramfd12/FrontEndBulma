@@ -1,0 +1,219 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kopi Judul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!---Link Untuk Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <!---Link Untuk Bulma Carousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <!---Link Untuk css Style_home-->
+    <link rel="stylesheet" href="/assets/css/style_home.css">
+    <!---Link Untuk css icons_home-->
+    <link rel="stylesheet" href="/assets/css/icons.css">
+</head>
+
+<body class="body has-background-black">
+
+    <!---Navigation Bar-->
+    <nav class="navbar has-background-black" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="home.html">
+                <img src="/assets/img/judul.PNG" style="max-height: 70px" class="py-2 px-2">
+            </a>
+            <!---Burger Button-->
+            <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+                data-target="navbarmenu">
+                <span aria-hidden="true" class="is-bold"></span>
+                <span aria-hidden="true" class="is-bold"></span>
+                <span aria-hidden="true" class="is-bold"></span>
+            </a>
+        </div>
+        <!--Isi dari Navbar-->
+        <div id="navbarmenu" class="navbar-menu has-background-black">
+            <div class="navbar-end">
+                <a href="home.html" class="navbar-item has-text-white">
+                    Home
+                </a>
+
+                <a href="order.html" class="navbar-item has-text-white">
+                    Orders
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Source Code Body -->
+
+    <!--Tampilan Hero-->
+    <section class="hero is-fullheight" style="background-image: url(/assets/img/foto1.jpg)" ;>
+        <div class="hero-head">
+            <h1 class="kopi has-text-white">Kopi Judul</h1>
+            <h1 class="navbar2 has-text-white">"Identitas dari jiwa seluruh karya tulis"</h1>
+        </div>
+    </section>
+
+    <!--Script dari burger-->
+    <script src="/assets/js/index.js"></script>
+
+    <!--Tampilan About Us-->
+    <section class="section2 is-small" style="background-image: url(/assets/img/foto5.jpg);">
+        <div class="container has-text-centered mb-5 mt-6">
+            <div class="columns is-multiline">
+                <div class="column is-5">
+                    <h1 class="isi has-text-left">About Us</h1>
+                    <h1 class="isi2 has-text-left">
+                        Kopi Judul is a premier and authentic Coffee Shop that has been proudly serving the
+                        Kalideres area and beyond since 2020.
+                    </h1>
+                </div>
+    </section>
+
+    <!--Carousel-->
+    <section class="section">
+        <div class="container">
+            <!-- Isi Carousel -->
+            <div id="carousel-demo" class="carousel">
+                <div class="item-1">
+                    <div class="box has-background-black">
+                        <figure class="image is-3by4">
+                            <!--Jika ingin mengganti foto-->
+                            <img src="/assets/img/foto1.jpg" style="background-size: cover;">
+                        </figure>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="box has-background-black">
+                        <figure class="image is-3by4">
+                            <!--Jika ingin mengganti foto-->
+                            <img src="/assets/img/foto8.jpg" style="background-size: cover;">
+                        </figure>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <div class="box has-background-black">
+                        <figure class="image is-3by4">
+                            <!--Jika ingin mengganti foto-->
+                            <img src="/assets/img/foto6.jpg" style="background-size: cover;">
+                        </figure>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <div class="box has-background-black">
+                        <figure class="image is-3by4">
+                            <!--Jika ingin mengganti foto-->
+                            <img src="/assets/img/foto4.jpg" style="background-size: cover;">
+                        </figure>
+                    </div>
+                </div>
+                <div class="item-5">
+                    <div class="box has-background-black">
+                        <figure class="image is-3by4">
+                            <!--Jika ingin mengganti foto-->
+                            <img src="/assets/img/foto7.jpg" style="background-size: cover;">
+                        </figure>
+                    </div>
+                </div>
+                <div class="item-6">
+                    <div class="box has-background-black">
+                        <figure class="image is-3by4">
+                            <!--Jika ingin mengganti foto-->
+                            <img src="/assets/img/foto2.jpg" style="background-size: cover;">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- End Carousel -->
+        </div>
+    </section>
+
+    <!--Script js yang mengatur Carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#carousel-demo', {
+            initialSlide: 0,
+            slidesToScroll: 1,
+            slidesToShow: 3,
+
+            navigation: true,
+            navigationKeys: true,
+            navigationSwipe: true,
+
+            loop: false,
+            infinite: true,
+
+            effect: 'translate',
+            duration: 300,
+            timing: 'ease',
+
+
+            breakpoints: [{
+                changePoint: 480,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+                changePoint: 640,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+                changePoint: 780,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+
+            ]
+
+        });
+    </script>
+
+    <!--Tampilan dari Opening Hours dengan menggunakan css style_home-->
+    <section class="section1 is-medium" style="background-image: url(/assets/img/foto10.jpg);">
+        <div class="container has-text-centered mb-0 mt-0">
+            <div class="columns is-multiline">
+                <div class="column is-12">
+                    <h1 class="isi3 has-text-centered">Opening Hours</h1>
+                    <h1 class="isi4 has-text-centered">
+                        Dine in or take away.
+                    </h1>
+                    <h1 class="isi4 has-text-centered">Tuesday - Sunday:
+                        4am - 11am</h1>
+                </div>
+    </section>
+
+
+
+    <!--Tampilan Footer-->
+    <footer class="footer is-full hero is-black">
+        <div class="content has-text-centered">
+            <h1 class="isi5">0851-5621-8380</h1>
+            <h1 class="isi5">Jl. Veteran I No.35, RT.1/RW.6, Pegadungan, Kec. Kalideres, Kota Jakarta Barat, Jakarta
+                11830
+            </h1>
+
+
+            <div class="content has-text-centered">
+                <!--Tampilan Footer Logo Sosmed-->
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/kopijudul/" class="fab fa-instagram"></a>
+                    <a href="https://www.google.co.id/maps/place/KOPI+JUDUL/@-6.1415366,106.7034512,15z/data=!4m12!1m6!3m5!1s0x2e69f912b03db81b:0x1f4ed9e0ea3ec0dc!2sKOPI+JUDUL!8m2!3d-6.1416033!4d106.7034374!3m4!1s0x2e69f912b03db81b:0x1f4ed9e0ea3ec0dc!8m2!3d-6.1416033!4d106.7034374"
+                        class="fa fa-map-pin"></a>
+                </div>
+            </div>
+            <!--Tampilan Footer Untuk Copyright-->
+            <div class="content has-text-centered">
+                <h1 class="isi5"> &copy; Copyright 2021 | built By. Arul Ikram | MASATECH</h1>
+
+            </div>
+
+
+    </footer>
+
+</body>
+
+</html>
